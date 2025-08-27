@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  spikerz-tests:
+    build: .
+    container_name: spikerz-playwright
+    volumes:
+      - .:/app                # mount project files
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report
+    env_file:
+      - .env                  # inject credentials
+    tty: true
