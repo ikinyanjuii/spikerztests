@@ -1,0 +1,23 @@
+{
+  "name": "spikerztest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikinyanjuii/spikerztests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikinyanjuii/spikerztests/issues"
+  },
+  "homepage": "https://github.com/ikinyanjuii/spikerztests#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "dotenv": "^17.2.1"
+  }
+}
