@@ -18,3 +18,4 @@ RUN npx playwright install --with-deps
 
 # Run tests by default
 CMD ["npx", "playwright", "test", "--reporter=line"]
+

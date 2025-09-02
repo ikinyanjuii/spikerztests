@@ -1,12 +1,16 @@
 version: "3.9"
 services:
-  spikerz-tests:
+  api:
     build: .
-    container_name: spikerz-playwright
-    volumes:
-      - .:/app                # mount project files
-      - ./test-results:/app/test-results
-      - ./playwright-report:/app/playwright-report
-    env_file:
-      - .env                  # inject credentials
-    tty: true
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"

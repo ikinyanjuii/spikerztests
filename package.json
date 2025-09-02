@@ -19,5 +19,10 @@
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.3.0",
     "dotenv": "^17.2.1"
+  },
+  "dependencies": {
+    "bullmq": "^5.58.4",
+    "express": "^5.1.0",
+    "ioredis": "^5.7.0"
   }
 }
