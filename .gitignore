@@ -1,9 +1,13 @@
 # Node modules
 node_modules/
+dist/
+.env
+.env.*
 
 # Environment vars
 .env
 .env.*
+setup.sh 
 
 # Playwright test outputs
 test-results/
